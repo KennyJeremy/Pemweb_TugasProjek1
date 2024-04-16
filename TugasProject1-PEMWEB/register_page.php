@@ -28,6 +28,7 @@
                             Registrasi
                         </div>
                         <div class="card-body">
+                            
                             <?php
                             if(isset($_GET['alert'])){
                                 if($_GET['alert'] == 'duplikat'){
@@ -42,12 +43,11 @@
                                     <?php
                                 }
                             }
-                            ?>
-
-                            <form action="register.php" method="post">
+                            ?> 
+                            <form id="registerForm" method="POST">
                                 <div class="form-group">
                                     <label for="nama">Nama:</label>
-                                    <input type="text" class="form-control" required="required" id="nama" name="nama" placeholder="Masukkan nama user/nama toko ..">
+                                    <input type="text" class="form-control" required="required" id="name" name="name" placeholder="Masukkan nama user/nama toko ..">
                                 </div>
 
                                 <div class="form-group">
@@ -56,8 +56,8 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="notelp">No.Telp:</label>
-                                    <input type="tel" class="form-control" required="required" id="notelp" name="notelp" placeholder="Masukkan nomor telepon ..">
+                                    <label for="hp">No.Telp:</label>
+                                    <input type="tel" class="form-control" required="required" id="hp" name="hp" placeholder="Masukkan nomor telepon ..">
                                 </div>
 
                                 <div class="form-group">
@@ -124,7 +124,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" name="register" value="Daftar">
+                                    <input type="button" class="btn btn-primary" value="Daftar" onclick="submitRegistForm()">
                                 </div>
                             </form>
                         </div>
