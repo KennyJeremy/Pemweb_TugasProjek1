@@ -51,7 +51,7 @@
                                 }
                             }
                             ?>
-                            <form action="login.php" method="post">
+                            <form id="loginForm" method="post">
                                 <div class="form-group">
                                     <label for="email">Email:</label>
                                     <input type="email" class="form-control" required="required" id="email" name="email" placeholder="Masukkan email .."/>
