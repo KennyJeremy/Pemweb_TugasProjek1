@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.form-group label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.custom-span {
+  margin-right: 5px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #fc7a1d;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+  border: solid;
+  border-color: #974912;
+  border-width: 2.3px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header img {
+  width: 40px;
+}
+
+.form-control {
+  border: solid;
+  border-color: #9e9e9e;
+  border-width: 1px;
+}
+
+.btn {
+  width: 150px;
+}
+
+#login {
+  background-color: #fc7a1d;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: solid;
+  border-radius: 15px;
+  margin-bottom: 0px;
+}
+
+.btn-primary:hover {
+  background-color: #c05f19 !important;
+  scale: 102%;
+}
+
+.form-group a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fc7a1d;
+}
+
+.form-group a:hover {
+  color: #ffab6f;
+}
+
+#left-side > *,
+#right-side,
+#register {
+  width: fit-content !important;
+}
+
+#left-side {
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+#register {
+  text-decoration: underline;
+}
+
+#bottom-side {
+  margin-top: 20px !important;
+}
