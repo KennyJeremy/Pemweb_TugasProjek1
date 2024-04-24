@@ -1,6 +1,6 @@
 <?php
 
-include '/application/config/connection.php';
+include '../config/connection.php';
 
     if($_SERVER['REQUEST_METHOD'] == "POST") {
         if(isset($_POST['nama'], $_POST['deskripsi'], $_POST['harga'], $_POST['jumlah'], $_FILES['uploadedfile']['name'])) {
@@ -9,7 +9,7 @@ include '/application/config/connection.php';
             $stock = $_POST['jumlah'];
             $price = $_POST['harga'];
             
-            $target_path = "applications/uploads/";
+            $target_path = "../uploads/";
             $target_path = $target_path . basename($_FILES['uploadedfile']['name']);
             
             if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'],
@@ -19,11 +19,12 @@ include '/application/config/connection.php';
                 session_start();
                 
                 $user_id = $_SESSION['user_id'];
+                $file_path = str_replace("../uploads", "./applications/uploads", $target_path); 
 
                 $sql = "
                     INSERT INTO products (name, description, price, stock, file_path, user_id)
                     VALUES (
-                        '$name', '$description', '$price', '$stock', '$target_path', '$user_id'
+                        '$name', '$description', '$price', '$stock', '$file_path', '$user_id'
                     )
                 ";
 
