@@ -38,8 +38,8 @@
                                     </label>
                                     <input id="uploadedfile" name="uploadedfile" type="file" class="form-control-file" required>
                                 </div>
-                                <div class="form-container" style="text-align: center;">
-                                <button type="submit" class="btn btn-primary" onclick="submitPostingForm()">Submit</button>
+                                <div class="form-group" style="text-align: center;">
+                                    <input type="button" class="btn btn-primary" onclick="submitPostingForm()" value="Submit"></input>
                                 </div>
                             </form>
                         </div>
