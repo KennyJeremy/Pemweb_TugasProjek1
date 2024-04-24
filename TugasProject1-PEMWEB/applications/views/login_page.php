@@ -15,14 +15,14 @@
                                     <label for="email"style="display: flex; align-items: center;">
                                         <span class="material-symbols-outlined custom-span">mail</span>Email
                                     </label>
-                                    <input type="email" class="form-control" required="required" id="email" name="email" placeholder="Masukkan email .."/>
+                                    <input type="email" class="form-control" required="required" id="email" name="email" placeholder="Masukkan email .." required/>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="password"style="display: flex; align-items: center;">
                                         <span class="material-symbols-outlined custom-span">lock</span>Password
                                     </label>
-                                    <input type="password" class="form-control" required="required" id="password" name="password" placeholder="Masukkan password .."/>
+                                    <input type="password" class="form-control" required="required" id="password" name="password" placeholder="Masukkan password .." required/>
                                 </div>
 
                                 <div class="form-group d-flex justify-content-between mt-3 mb-3" id="bottom-side" style="text-align: center;">
